@@ -1,0 +1,186 @@
+/* تصفير المسافات الافتراضية وحركة النزول السلس */
+html {
+    scroll-behavior: smooth; /* هاي الخاصية الي تخلي النزول ناعم وسلس */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* الألوان العامة للموقع (Gaming Dark Mode) */
+body {
+    background-color: #0b0c10;
+    color: #ffffff;
+}
+
+/* الهيدر */
+header {
+    background-color: #1f2833;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    border-bottom: 2px solid #66fcf1;
+}
+
+.logo {
+    color: #66fcf1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #66fcf1;
+}
+
+.cart-btn {
+    background-color: #66fcf1;
+    color: #0b0c10;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* البانر الرئيسي */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.4)), url('blod.jpg') ;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 4%;
+    background-size: cover;
+    
+    background-position: center top;
+    background-color: #161920;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #c5c6c7;
+    margin-bottom: 20px;
+}
+
+.btn-main {
+    background-color: #45f3ff;
+    color: #000;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 0 15px #45f3ff;
+}
+
+/* قسم الألعاب */
+.games-section {
+    padding: 40px 8%;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-left: 5px solid #66fcf1;
+    padding-right: 10px;
+}
+
+/* شبكة عرض الألعاب (Grid) */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* كارت اللعبة */
+.game-card {
+    background-color: #1f2833;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #45c4b022;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    border-color: #66fcf1;
+}
+
+.game-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.game-info {
+    padding: 15px;
+}
+
+.game-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.game-price {
+    color: #66fcf1;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* زر الشراء */
+.btn-buy {
+    display: block;
+    text-align: center;
+    background-color: #1f2833;
+    color: #66fcf1;
+    border: 1px solid #66fcf1;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #66fcf1;
+    color: #0b0c10;
+}
+
+/* الفوتر */
+footer {
+    background-color: #1f2833;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #45c4b022;
+    color: #c5c6c7;
+}
