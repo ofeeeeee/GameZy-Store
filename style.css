@@ -72,7 +72,6 @@ nav ul li a:hover {
     align-items: flex-start;
     padding: 0 4%;
     background-size: cover;
-    
     background-position: center top;
     background-color: #161920;
 }
@@ -154,6 +153,15 @@ nav ul li a:hover {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 15px;
+}
+
+/* التنسيق الجديد الخاص بالشخط على السعر القديم */
+.old-price {
+    text-decoration: line-through;
+    color: #888888; /* سويته رمادي حتى يبرز السعر الجديد الملون */
+    font-size: 15px;
+    margin-right: 8px;
+    font-weight: normal;
 }
 
 /* زر الشراء */
